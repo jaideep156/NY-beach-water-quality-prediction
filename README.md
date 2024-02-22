@@ -32,7 +32,7 @@ Checked the datatypes of all the columns first and dropped the irrelevant column
 
 It checks each value in the ``sample_location`` column and keeps it if it's either `Center`, `Left`, or `Right`. Otherwise, it sets the value to `NaN` (missing data)
 
-Imputed missing values in the ```sample_location``` column with the most frequent value of that column, i.e. ```Center```
+Imputed missing values in the ```sample_location``` column with the most frequent value of that column, i.e., ```Center```
 
 
 Next using ```location_encoder``` on ```sample_location``` and ```TargetEncoder``` on ```beach_name``` columns
@@ -43,7 +43,7 @@ Dropped the following null values in the columns:\
 
 ### Train-Test Split
 
-Did an 80-20 train-test split with 80% in training set and 20% on for testing set using the [sci-kit learn](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html) library
+Did a 70-30 train-test split with 70% in the training set and 30% for the testing set using the [sci-kit learn](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html) library
 
 ### Model building
 
